@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description.
+# Line up the first '|' above the ':' following the base package name, and
+# the '|' on the right side marks the last column you can put a character in.
+# You must make exactly 11 lines for the formatting to be correct.  It's also
+# customary to leave one space after the ':' except on otherwise blank lines.
+
+                |-----handy-ruler------------------------------------------------------|
+python3-filelock: python3-filelock (A platform-independent file lock)
+python3-filelock:
+python3-filelock: This package contains a single Python module, which implements a
+python3-filelock: platform-independent file lock. A FileLock is used to indicate to
+python3-filelock: another process that a resource or working directory is currently in
+python3-filelock: use.
+python3-filelock:
+python3-filelock: https://github.com/benediktschmitt/py-filelock
+python3-filelock:
+python3-filelock:
+python3-filelock:

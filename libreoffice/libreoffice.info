@@ -1,0 +1,17 @@
+PRGNAM="libreoffice"
+VERSION="7.1.4.2"
+HOMEPAGE="https://www.libreoffice.org"
+DOWNLOAD="https://download.documentfoundation.org/libreoffice/src/7.1.4/libreoffice-7.1.4.2.tar.xz
+          https://download.documentfoundation.org/libreoffice/src/7.1.4/libreoffice-dictionaries-7.1.4.2.tar.xz
+          https://download.documentfoundation.org/libreoffice/src/7.1.4/libreoffice-help-7.1.4.2.tar.xz
+          https://download.documentfoundation.org/libreoffice/src/7.1.4/libreoffice-translations-7.1.4.2.tar.xz"
+MD5SUM="4e4e81a4f66544775912c85ce214a7d7
+        d6e81b974dac1a661f06cca2f0d7b777
+        e03fdc7d36e6130b7a67d7b07be8a66f
+        63e7eb886dcd9d90ccef9dc8ae5f2ad9"
+DOWNLOAD_x86_64=""
+MD5SUM_x86_64=""
+REQUIRES="zulu-openjdk-lts"
+BUILD_REQUIRES="apache-ant perl-archive-zip"
+MAINTAINER="Dr. Mike Murphy"
+EMAIL="mmurphy2@coastal.edu"

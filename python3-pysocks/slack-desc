@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description.
+# Line up the first '|' above the ':' following the base package name, and
+# the '|' on the right side marks the last column you can put a character in.
+# You must make exactly 11 lines for the formatting to be correct.  It's also
+# customary to leave one space after the ':' except on otherwise blank lines.
+
+               |-----handy-ruler------------------------------------------------------|
+python3-pysocks: python3-pysocks (Python SOCKS client module)
+python3-pysocks:
+python3-pysocks: Updated and semi-actively maintained version of SocksiPy,
+python3-pysocks: with bug fixes and extra features.
+python3-pysocks:
+python3-pysocks: Acts as a drop-in replacement to the socket module.
+python3-pysocks:
+python3-pysocks:
+python3-pysocks:
+python3-pysocks:
+python3-pysocks:

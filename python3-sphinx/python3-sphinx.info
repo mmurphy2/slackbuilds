@@ -1,0 +1,24 @@
+PRGNAM="python3-sphinx"
+VERSION="4.0.2"
+HOMEPAGE="http://www.sphinx-doc.org"
+DOWNLOAD="https://files.pythonhosted.org/packages/source/S/Sphinx/Sphinx-4.0.2.tar.gz
+          https://pypi.python.org/packages/source/s/sphinxcontrib-applehelp/sphinxcontrib-applehelp-1.0.2.tar.gz
+          https://pypi.python.org/packages/source/s/sphinxcontrib-devhelp/sphinxcontrib-devhelp-1.0.2.tar.gz
+          https://pypi.python.org/packages/source/s/sphinxcontrib-htmlhelp/sphinxcontrib-htmlhelp-2.0.0.tar.gz
+          https://pypi.python.org/packages/source/s/sphinxcontrib-jsmath/sphinxcontrib-jsmath-1.0.1.tar.gz
+          https://pypi.python.org/packages/source/s/sphinxcontrib-qthelp/sphinxcontrib-qthelp-1.0.3.tar.gz
+          https://pypi.python.org/packages/source/s/sphinxcontrib-serializinghtml/sphinxcontrib-serializinghtml-1.1.5.tar.gz
+          https://pypi.python.org/packages/source/s/sphinxcontrib-websupport/sphinxcontrib-websupport-1.2.4.tar.gz"
+MD5SUM="025cf3c9c173872924f7c4d96a878b65
+        3f2de7681e12dde031acee0497c3cc2b
+        94069c5cdb5079c445f5477fa6107016
+        70765b55395a3c20233631802902c840
+        e45179f0a3608b6766862e0f34c23b62
+        93216721f3e154cce12d1e9c3307b415
+        d99d2edc7b26988dc5fa92163857bfbf
+        eecfd8dc4933bd28c07ffb5e64fa2444"
+DOWNLOAD_x86_64=""
+MD5SUM_x86_64=""
+REQUIRES="python3-alabaster python3-babel python3-imagesize python3-jinja python3-snowballstemmer"
+MAINTAINER="Dr. Mike Murphy"
+EMAIL="mmurphy2@coastal.edu"

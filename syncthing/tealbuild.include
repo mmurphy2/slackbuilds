@@ -1,0 +1,6 @@
+# tealbuild include file for syncthing
+
+if ! id syncthing >/dev/null 2>&1; then
+    groupadd -g 307 syncthing
+    useradd -u 307 -d /var/lib/syncthing -s /bin/false -g syncthing syncthing
+fi

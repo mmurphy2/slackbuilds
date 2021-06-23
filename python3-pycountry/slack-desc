@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description.
+# Line up the first '|' above the ':' following the base package name, and
+# the '|' on the right side marks the last column you can put a character in.
+# You must make exactly 11 lines for the formatting to be correct.  It's also
+# customary to leave one space after the ':' except on otherwise blank lines.
+
+                 |-----handy-ruler------------------------------------------------------|
+python3-pycountry: python3-pycountry (ISO country databases for Python)
+python3-pycountry:
+python3-pycountry: pycountry provides ISO 639-3, 3166, 3166-3, 3166-2, 4217, and 15294
+python3-pycountry: databases for use in Python code that needs to obtain ISO country,
+python3-pycountry: subdivision, language, currency, and script information.
+python3-pycountry:
+python3-pycountry: Website: https://pypi.org/project/pycountry
+python3-pycountry:
+python3-pycountry:
+python3-pycountry:
+python3-pycountry:

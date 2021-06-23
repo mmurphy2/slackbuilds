@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description.
+# Line up the first '|' above the ':' following the base package name, and
+# the '|' on the right side marks the last column you can put a character in.
+# You must make exactly 11 lines for the formatting to be correct.  It's also
+# customary to leave one space after the ':' except on otherwise blank lines.
+
+            |-----handy-ruler------------------------------------------------------|
+vim-supertab: vim-supertab (vim supertab plugin)
+vim-supertab:
+vim-supertab: Supertab is a vim plugin that allows the TAB key to work for insert
+vim-supertab: completion. This plugin is highly configurable, with longest and
+vim-supertab: context completion options.
+vim-supertab:
+vim-supertab: Website: https://github.com/ervandew/supertab
+vim-supertab:
+vim-supertab:
+vim-supertab:
+vim-supertab:

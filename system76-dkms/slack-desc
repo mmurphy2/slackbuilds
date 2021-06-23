@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description.
+# Line up the first '|' above the ':' following the base package name, and
+# the '|' on the right side marks the last column you can put a character in.
+# You must make exactly 11 lines for the formatting to be correct.  It's also
+# customary to leave one space after the ':' except on otherwise blank lines.
+
+             |-----handy-ruler------------------------------------------------------|
+system76-dkms: system76-dkms (Drivers for System76 laptops)
+system76-dkms:
+system76-dkms: Drivers for the fan and keyboard backlight in certain System76
+system76-dkms: laptop models.
+system76-dkms:
+system76-dkms: Website: https://github.com/pop-os/system76-dkms
+system76-dkms:
+system76-dkms:
+system76-dkms:
+system76-dkms:
+system76-dkms:

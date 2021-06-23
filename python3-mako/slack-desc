@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description.
+# Line up the first '|' above the ':' following the base package name, and
+# the '|' on the right side marks the last column you can put a character in.
+# You must make exactly 11 lines for the formatting to be correct.  It's also
+# customary to leave one space after the ':' except on otherwise blank lines.
+
+            |-----handy-ruler------------------------------------------------------|
+python3-mako: python3-mako (Template library for Python)
+python3-mako:
+python3-mako: Mako is a template library written in Python. It provides a familiar,
+python3-mako: non-XML syntax that compiles into Python modules for maximum
+python3-mako: performance. Mako's syntax and API borrow from the best ideas of many
+python3-mako: others, including Django and Jinja2 templates, Cheetah, Myghty, and
+python3-mako: Genshi. Conceptually, Mako is an embedded Python language.
+python3-mako:
+python3-mako: Website: https://www.makotemplates.org
+python3-mako:
+python3-mako:

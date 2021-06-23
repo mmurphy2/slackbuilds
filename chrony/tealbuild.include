@@ -1,0 +1,6 @@
+# tealbuild include file for chrony
+
+if ! id chrony >/dev/null 2>&1; then
+    groupadd -g 354 chrony
+    useradd -u 354 -d /var/lib/chrony -s /bin/false -g chrony chrony
+fi

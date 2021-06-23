@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description.
+# Line up the first '|' above the ':' following the base package name, and
+# the '|' on the right side marks the last column you can put a character in.
+# You must make exactly 11 lines for the formatting to be correct.  It's also
+# customary to leave one space after the ':' except on otherwise blank lines.
+
+             |-----handy-ruler------------------------------------------------------|
+python3-jinja: python3-jinja (Python templating engine)
+python3-jinja:
+python3-jinja: Jinja is a fast, expressive, extensible templating engine. Special
+python3-jinja: placeholders in the template allow writing code similar to Python
+python3-jinja: syntax. The template is passed data to render the final document.
+python3-jinja:
+python3-jinja: Website: https://palletsprojects.com/p/jinja/
+python3-jinja:
+python3-jinja:
+python3-jinja:
+python3-jinja:

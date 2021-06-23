@@ -1,0 +1,5 @@
+# tealbuild include file for NetworkManager-openconnect
+
+if ! id nm-openconnect >/dev/null 2>&1; then
+    useradd -u 321 -g nogroup -d /var/empty -s /bin/false nm-openconnect
+fi

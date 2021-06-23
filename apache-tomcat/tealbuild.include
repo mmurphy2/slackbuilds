@@ -1,0 +1,6 @@
+# tealbuild include file for apache-tomcat
+
+if ! id tomcat >/dev/null 2>&1; then
+    groupadd -g 232 tomcat
+    useradd -u 232 -g tomcat -d /var/lib/tomcat tomcat
+fi

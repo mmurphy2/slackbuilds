@@ -1,0 +1,12 @@
+PRGNAM="python3-babel"
+VERSION="2.9.0"
+HOMEPAGE="http://babel.pocoo.org/"
+DOWNLOAD="https://github.com/python-babel/babel/archive/v2.9.1/babel-2.9.1.tar.gz \
+          https://github.com/unicode-org/cldr/archive/refs/tags/release-37.tar.gz"
+MD5SUM="9654467d6001ae2c9b09888726c5ceb8 \
+        8d78cdbad09589100c8cff6812645a28"
+DOWNLOAD_x86_64=""
+MD5SUM_x86_64=""
+REQUIRES="python3-pytz"
+MAINTAINER="Dr. Mike Murphy"
+EMAIL="mmurphy2@coastal.edu"

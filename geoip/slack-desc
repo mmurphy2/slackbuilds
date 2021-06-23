@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description.
+# Line up the first '|' above the ':' following the base package name, and
+# the '|' on the right side marks the last column you can put a character in.
+# You must make exactly 11 lines for the formatting to be correct.  It's also
+# customary to leave one space after the ':' except on otherwise blank lines.
+
+     |-----handy-ruler------------------------------------------------------|
+geoip: geoip (GeoIP API and database)
+geoip:
+geoip: GeoIP is the proprietary technology that drives MaxMind's IP
+geoip: geolocation data and services. GeoIP provides businesses with a
+geoip: non-invasive way to determine geographical and other information
+geoip: about their Internet visitors in real-time.
+geoip:
+geoip: "This product includes GeoLite data created by MaxMind, available
+geoip: from http://www.maxmind.com" (CC BY-SA 4.0)
+geoip:
+geoip: Includes a geoip-update script from mailfud.org.

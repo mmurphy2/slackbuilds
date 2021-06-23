@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description.
+# Line up the first '|' above the ':' following the base package name, and
+# the '|' on the right side marks the last column you can put a character in.
+# You must make exactly 11 lines for the formatting to be correct.  It's also
+# customary to leave one space after the ':' except on otherwise blank lines.
+
+           |-----handy-ruler------------------------------------------------------|
+vim-airline: vim-airline (Airline plugin and themes for vim)
+vim-airline:
+vim-airline: Lightweight and highly configurable status and tabline for vim.
+vim-airline:
+vim-airline: This package includes vim-airline-themes, which provide an
+vim-airline: assortment of color schemes for vim-airline.
+vim-airline:
+vim-airline: Website: https://github.com/vim-airline/vim-airline
+vim-airline: Themes: https://github.com/vim-airline/vim-airline-themes
+vim-airline:
+vim-airline:

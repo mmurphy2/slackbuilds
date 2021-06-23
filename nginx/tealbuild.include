@@ -1,0 +1,11 @@
+# tealbuild include file for nginx
+
+if ! id nginx >/dev/null 2>&1; then
+    groupadd -g 207 nginx
+    useradd -u 207 -d /var/lib/nginx -s /bin/false -g nginx nginx
+fi
+
+NGINXUSER=nginx
+NGINXGROUP=nginx
+GEOIP=yes
+DYNAMIC=yes

@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description.
+# Line up the first '|' above the ':' following the base package name, and
+# the '|' on the right side marks the last column you can put a character in.
+# You must make exactly 11 lines for the formatting to be correct.  It's also
+# customary to leave one space after the ':' except on otherwise blank lines.
+
+               |-----handy-ruler------------------------------------------------------|
+python3-distlib: python3-distlib (Low-level parts of packaging/distutils2)
+python3-distlib:
+python3-distlib: Low-level parts of packaging/distutils2, which implement various
+python3-distlib: PEPs. Enhanced with additional features for dependency resolution,
+python3-distlib: package resource management, and more.
+python3-distlib:
+python3-distlib: Website: https://bitbucket.org/pypa/distlib
+python3-distlib:
+python3-distlib:
+python3-distlib:
+python3-distlib:

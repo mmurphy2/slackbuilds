@@ -1,0 +1,6 @@
+# tealbuild include file for clamav
+
+if ! id clamav >/dev/null 2>&1; then
+    groupadd -g 210 clamav
+    useradd -u 210 -d /dev/null -s /bin/false -g clamav clamav
+fi

@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description.
+# Line up the first '|' above the ':' following the base package name, and
+# the '|' on the right side marks the last column you can put a character in.
+# You must make exactly 11 lines for the formatting to be correct.  It's also
+# customary to leave one space after the ':' except on otherwise blank lines.
+
+          |-----handy-ruler------------------------------------------------------|
+apache-ant: apache-ant (Java-based build tool)
+apache-ant:
+apache-ant: Apache Ant is a Java-based build tool - like make but without
+apache-ant: make's wrinkles. Ant is extended using Java classes. The
+apache-ant: configuration files are XML-based, calling out a target tree where
+apache-ant: tasks get executed. Each task is run by an object that implements
+apache-ant: a Task interface.
+apache-ant:
+apache-ant: This package repackages the official binary apache-ant distribution.
+apache-ant:
+apache-ant: Website: https://ant.apache.org

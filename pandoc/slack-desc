@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description.
+# Line up the first '|' above the ':' following the base package name, and
+# the '|' on the right side marks the last column you can put a character in.
+# You must make exactly 11 lines for the formatting to be correct.  It's also
+# customary to leave one space after the ':' except on otherwise blank lines.
+
+      |-----handy-ruler------------------------------------------------------|
+pandoc: pandoc (a universal document converter)
+pandoc:
+pandoc: Pandoc is a Haskell library for converting from one markup format to
+pandoc: another, and a command-line tool that uses this library. This package
+pandoc: repackages the official binary version.
+pandoc:
+pandoc: Pandoc can convert between numerous markup and word processing
+pandoc: formats, including, but not limited to, various flavors of Markdown,
+pandoc: HTML, LaTeX and Word docx.
+pandoc:
+pandoc: Homepage: https://pandoc.org/

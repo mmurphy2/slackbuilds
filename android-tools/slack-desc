@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description.
+# Line up the first '|' above the ':' following the base package name, and
+# the '|' on the right side marks the last column you can put a character in.
+# You must make exactly 11 lines for the formatting to be correct.  It's also
+# customary to leave one space after the ':' except on otherwise blank lines.
+
+             |-----handy-ruler------------------------------------------------------|
+android-tools: android-tools (Tools for working with Android devices)
+android-tools:
+android-tools: This package contains the command-line tools that are normally
+android-tools: shipped with Android Studio. These tools include the adb and
+android-tools: fastboot commands that are used to install software and operating
+android-tools: system images onto smartphones and tablets.
+android-tools:
+android-tools: Website: http://tools.android.com
+android-tools: Upstream: https://github.com/nmeum/android-tools
+android-tools:
+android-tools:
