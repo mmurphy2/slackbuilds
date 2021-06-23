@@ -1,11 +1,8 @@
 # Dr. Murphy's CCU SlackBuilds
 
 This repository contains SlackBuilds for packages created for the upcoming
-[Slackware Linux](http://www.slackware.com) 15.0 release. Currently, builds
+[Slackware Linux](http://www.slackware.com) 15.0 release. Currently, ports
 are hosted only for the x86\_64 architecture.
-
-The resulting binary packages are available at:
-[https://mirror.coastal.edu/tealrepo/mmurphy2/15.0/](https://mirror.coastal.edu/tealrepo/mmurphy2/15.0).
 
 ## Info File Format
 
