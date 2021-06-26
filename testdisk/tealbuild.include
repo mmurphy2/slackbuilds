@@ -1,0 +1,3 @@
+# tealbuild include file for testdisk
+
+SUDO=true

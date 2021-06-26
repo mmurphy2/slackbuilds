@@ -1,0 +1,8 @@
+# tealbuild include file for postgresql
+
+if ! id postgres >/dev/null 2>&1; then
+    groupadd -g 209 postgres
+    useradd -u 209 -d /var/lib/pgsql -s /bin/false -g postgres postgres
+fi
+
+ENABLE_NLS=1
