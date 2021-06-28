@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description.
+# Line up the first '|' above the ':' following the base package name, and
+# the '|' on the right side marks the last column you can put a character in.
+# You must make exactly 11 lines for the formatting to be correct.  It's also
+# customary to leave one space after the ':' except on otherwise blank lines.
+
+         |-----handy-ruler------------------------------------------------------|
+imagescan: imagescan (Frontend for Epson scanners and all-in-ones)
+imagescan:
+imagescan: EPSON Image Scan is a GUI frontend for certain scanner and all-in-one
+imagescan: models.
+imagescan:
+imagescan: Website: http://download.ebz.epson.net/dsc/search/01/search/?OSC=LX
+imagescan:
+imagescan:
+imagescan:
+imagescan:
+imagescan:

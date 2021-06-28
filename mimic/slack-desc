@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description.
+# Line up the first '|' above the ':' following the base package name, and
+# the '|' on the right side marks the last column you can put a character in.
+# You must make exactly 11 lines for the formatting to be correct.  It's also
+# customary to leave one space after the ':' except on otherwise blank lines.
+
+     |-----handy-ruler------------------------------------------------------|
+mimic: mimic (Mycroft text-to-speech engine)
+mimic:
+mimic: Mimic Classic is a fast, light-weight Text to Speech engine developed
+mimic: by Mycroft and VocaliD, built on top of Carnegie Mellon University’s
+mimic: FLITE technology. It is light enough to run on Raspberry Pi class
+mimic: hardware.
+mimic:
+mimic: Website: https://mimic.mycroft.ai/
+mimic:
+mimic:
+mimic:
