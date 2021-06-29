@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description.
+# Line up the first '|' above the ':' following the base package name, and
+# the '|' on the right side marks the last column you can put a character in.
+# You must make exactly 11 lines for the formatting to be correct.  It's also
+# customary to leave one space after the ':' except on otherwise blank lines.
+
+                        |-----handy-ruler------------------------------------------------------|
+python3-semantic-version: python3-semantic-version (A library implementing the 'SemVer' scheme.)
+python3-semantic-version:
+python3-semantic-version: The python-semanticversion library provides a few tools to handle
+python3-semantic-version: semantic versioning in Python. Semantic versioning (2.0.0 spec) is a
+python3-semantic-version: specification for version numbering, in which the major version is
+python3-semantic-version: incremented for incompatible API changes, the minor version is
+python3-semantic-version: incremented for adding backwards-compatible functionality, and the
+python3-semantic-version: patch version is incremented for backwards-compatible bug fixes.
+python3-semantic-version:
+python3-semantic-version: Website: https://python-semanticversion.readthedocs.io/en/latest/
+python3-semantic-version:

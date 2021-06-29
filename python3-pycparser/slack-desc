@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description.
+# Line up the first '|' above the ':' following the base package name, and
+# the '|' on the right side marks the last column you can put a character in.
+# You must make exactly 11 lines for the formatting to be correct.  It's also
+# customary to leave one space after the ':' except on otherwise blank lines.
+
+                 |-----handy-ruler------------------------------------------------------|
+python3-pycparser: python3-pycparser (C parser in Python)
+python3-pycparser:
+python3-pycparser: pycparser is a complete parser of the C language, written in pure
+python3-pycparser: Python using the PLY parsing library. It parses C code into an AST
+python3-pycparser: and can serve as a front-end for C compilers or analysis tools.
+python3-pycparser:
+python3-pycparser: Homepage:  https://github.com/eliben/pycparser
+python3-pycparser:
+python3-pycparser:
+python3-pycparser:
+python3-pycparser:

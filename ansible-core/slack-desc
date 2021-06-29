@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description.
+# Line up the first '|' above the ':' following the base package name, and
+# the '|' on the right side marks the last column you can put a character in.
+# You must make exactly 11 lines for the formatting to be correct.  It's also
+# customary to leave one space after the ':' except on otherwise blank lines.
+
+            |-----handy-ruler------------------------------------------------------|
+ansible-core: ansible-core (Enterprise configuration management system)
+ansible-core:
+ansible-core: Ansible is an IT automation tool. It can configure systems, deploy
+ansible-core: software, and orchestrate more advanced IT tasks such as continuous
+ansible-core: deployments or zero downtime rolling updates.
+ansible-core:
+ansible-core: Ansible core is the main building block and architecture for Ansible,
+ansible-core: containing the runtime, base components, and built-in modules.
+ansible-core:
+ansible-core: Website: https://docs.ansible.com/core.html
+ansible-core:
