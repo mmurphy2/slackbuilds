@@ -1,8 +1,10 @@
 PRGNAM="python3-ruamel-yaml"
-VERSION="0.17.9"
+VERSION="0.17.10"
 HOMEPAGE="https://bitbucket.org/ruamel/yaml"
-DOWNLOAD="https://pypi.org/packages/source/r/ruamel.yaml/ruamel.yaml-0.17.9.tar.gz"
-MD5SUM="d6cd0bcabdabfbdb0f639374e6e239e3"
+DOWNLOAD="https://pypi.org/packages/source/r/ruamel.yaml/ruamel.yaml-0.17.10.tar.gz
+          https://pypi.org/packages/source/r/ruamel.yaml.clib/ruamel.yaml.clib-0.2.6.tar.gz"
+MD5SUM="8e93fe82f1f227559cbbe5f1f9067fdb
+        e2397bedcd1f40b2f22b3696175082aa"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

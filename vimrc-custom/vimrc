@@ -1,0 +1,211 @@
+" Use Vim defaults instead of 100% vi compatibility
+" Avoid side-effects when nocompatible has already been set.
+if &compatible
+  set nocompatible
+endif
+
+set ruler
+set suffixes+=.aux,.bbl,.blg,.brf,.cb,.dvi,.idx,.ilg,.ind,.inx,.jpg,.log,.out,.png,.toc
+set suffixes-=.h
+set suffixes-=.obj
+
+" Move temporary files to a secure location to protect against CVE-2017-1000382
+if exists('$XDG_CACHE_HOME')
+  let &g:directory=$XDG_CACHE_HOME
+else
+  let &g:directory=$HOME . '/.cache'
+endif
+let &g:undodir=&g:directory . '/vim/undo//'
+let &g:backupdir=&g:directory . '/vim/backup//'
+let &g:directory.='/vim/swap//'
+
+" Create directories if they doesn't exist
+if ! isdirectory(expand(&g:directory))
+  silent! call mkdir(expand(&g:directory), 'p', 0700)
+endif
+if ! isdirectory(expand(&g:backupdir))
+  silent! call mkdir(expand(&g:backupdir), 'p', 0700)
+endif
+if ! isdirectory(expand(&g:undodir))
+  silent! call mkdir(expand(&g:undodir), 'p', 0700)
+endif
+
+" Make shift-insert work like in Xterm
+if has('gui_running')
+  map <S-Insert> <MiddleMouse>
+  map! <S-Insert> <MiddleMouse>
+endif
+
+" do not load defaults if ~/.vimrc is missing
+"let skip_defaults_vim=1
+
+" Enable 256 colors (maybe)
+set t_Co=256
+
+" Filetype-based autoindent
+filetype indent plugin on
+
+" Syntax highlighting
+syntax on
+
+" Allow hidden buffers
+set hidden
+
+" Better command line completion
+set wildmenu
+
+" Ignore compiled and system files when using wildcards
+set wildignore=*.o,*~,*.pyc,*.pyo,*.swp,*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store/*,*/__pycache__/*
+
+" Show partial commands
+set showcmd
+
+" Highlight searches
+set hlsearch
+
+" Case-insenstive search except when using capital letters
+set ignorecase
+set smartcase
+
+" Incremental search on
+set incsearch
+
+" Backspace over autoindent, line breaks, and start of insert
+set backspace=indent,eol,start
+set whichwrap+=<,>,h,l
+
+" Always display the status line
+set laststatus=2
+
+" Visual bell, then suppress the bell
+set visualbell
+set t_vb=
+
+" Enable the mouse
+set mouse=a
+
+" 2 line command window height
+set cmdheight=2
+
+" Set history lines
+set history=500
+
+" Show line numbers
+set number
+set numberwidth=4
+highlight LineNr ctermfg=white ctermbg=darkcyan
+
+" Auto-indent for files without file-specific indent options
+set autoindent
+set smartindent
+
+" Use spaces instead of tabs, 4-space tab stop
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+
+" Re-read a file automatically if it is changed on disk outside vim
+set autoread
+
+" Improve performance while executing macros
+set lazyredraw
+
+" Turn regular expression magic on (grep-compatible)
+set magic
+
+" Show matching brackets when cursor is over them (blink in tenths of seconds)
+set showmatch
+set mat=2
+
+" Use UTF-8 encoding and Unix line endings
+set encoding=utf8
+set ffs=unix,dos,mac
+
+" Spell settings: use en_US
+set spelllang=en_us
+
+" Map C-L to turn off search highlighting
+nnoremap <C-L> :nohl<CR><C-L>
+
+" Editor area colors
+highlight Normal ctermbg=235
+
+" Leader s to toggle spellcheck
+nmap <leader>s :setlocal spell!<cr>
+
+" Navigate misspelled words
+nmap <leader>Sn ]s
+nmap <leader>Sp [s
+
+" Spelling suggestions
+nmap <leader>? z=
+
+" Add to dictionary
+nmap <leader>Sa zg
+
+" Leader w to toggle wrapping
+nmap <leader>w :setlocal wrap!<cr>
+
+" :W saves the file using sudo
+command W w !sudo tee % > /dev/null
+
+" paste mode
+set pastetoggle=<F2>
+nmap <leader>p :set paste<cr>
+nmap <leader>P :set nopaste<cr>
+
+" Search forward or backward using visual mode selection and * or #
+vnoremap <silent> * :<C-u>call VisualSelection('', '')<CR>/<C-R>=@/<CR><CR>
+vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
+
+" Move between windows more easily
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+
+" Tab management
+nmap <leader>tn :tabnew<cr>
+nmap <leader>to :tabonly<cr>
+nmap <leader>tc :tabclose<cr>
+nmap <leader>tm :tabmove
+nmap <leader>t<leader> :tabnext
+
+" Use tl to toggle between current tab and last accessed tab
+let g:lasttab = 1
+nmap <leader>tl :exe "tabn ".g:lasttab<CR>
+au TabLeave * let g:lasttab = tabpagenr()
+
+" Opens a new tab with the current buffer's path
+nmap <leader>te :tabedit <C-R>=expand("%:p:h")<cr>/
+
+" Switches CWD to the directory of the open buffer
+nmap <leader>cd :cd %:p:h<cr>:pwd<cr>
+
+" Buffer switching behavior
+try
+    set switchbuf=useopen,usetab,newtab
+    set stal=2
+catch
+endtry
+
+" Return to last edit position when opening files
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+
+" VisualSelection function
+function! VisualSelection(direction, extra_filter) range
+    let l:saved_reg = @"
+    execute "normal! vgvy"
+
+    let l:pattern = escape(@", "\\/.*'$^~[]")
+    let l:pattern = substitute(l:pattern, "\n$", "", "")
+
+    if a:direction == 'gv'
+        call CmdLine("Ack '" . l:pattern . "' " )
+    elseif a:direction == 'replace'
+        call CmdLine("%s" . '/'. l:pattern . '/')
+    endif
+
+    let @/ = l:pattern
+    let @" = l:saved_reg
+endfunction

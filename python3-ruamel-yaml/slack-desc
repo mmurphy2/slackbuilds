@@ -8,9 +8,9 @@
                    |-----handy-ruler------------------------------------------------------|
 python3-ruamel-yaml: python3-ruamel-yaml (YAML 1.2 parser and emitter for Python)
 python3-ruamel-yaml:
-python3-ruamel-yaml: ruamel.yaml is a YAML 1.2 parser and emitter for Python that support
-python3-ruamel-yaml: comment preservation.
-python3-ruamel-yaml:
+python3-ruamel-yaml: ruamel.yaml is a YAML 1.2 parser and emitter for Python that supports
+python3-ruamel-yaml: comment preservation. This package includes ruamel.yaml.clib, which is
+python3-ruamel-yaml: the C version of the reader, parser, and emitter.
 python3-ruamel-yaml:
 python3-ruamel-yaml: Homepage: https://bitbucket.org/ruamel/yaml
 python3-ruamel-yaml:

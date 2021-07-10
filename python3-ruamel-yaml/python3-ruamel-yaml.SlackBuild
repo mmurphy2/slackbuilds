@@ -25,7 +25,8 @@
 
 PRGNAM=python3-ruamel-yaml
 SRCNAM=ruamel.yaml
-VERSION=${VERSION:-0.17.9}
+VERSION=${VERSION:-0.17.10}
+CLIBVER=${CLIBVER:-0.2.6}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_teal}
 
@@ -41,6 +42,20 @@ CWD=$(pwd)
 TMP=${TMP:-/tmp/tealbuild/build}
 PKG=${TMP}/package-${PRGNAM}
 OUTPUT=${OUTPUT:-/tmp/tealbuild/output}
+
+if [ "$ARCH" = "i586" ]; then
+  SLKCFLAGS="-O2 -march=i586 -mtune=i686"
+  LIBDIRSUFFIX=""
+elif [ "$ARCH" = "i686" ]; then
+  SLKCFLAGS="-O2 -march=i686 -mtune=i686"
+  LIBDIRSUFFIX=""
+elif [ "$ARCH" = "x86_64" ]; then
+  SLKCFLAGS="-O2 -fPIC"
+  LIBDIRSUFFIX="64"
+else
+  SLKCFLAGS="-O2"
+  LIBDIRSUFFIX=""
+fi
 
 set -e
 
@@ -62,6 +77,27 @@ RUAMEL_NO_PIP_INSTALL_CHECK=1 python3 setup.py install --root=$PKG --optimize=1
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a CHANGES LICENSE PKG-INFO README.rst $PKG/usr/doc/$PRGNAM-$VERSION
+
+cd -
+tar xvf $CWD/ruamel.yaml.clib-$CLIBVER.tar.gz
+cd ruamel.yaml.clib-$CLIBVER
+
+chown -R root:root .
+find -L . \
+ \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
+  -o -perm 511 \) -exec chmod 755 {} \; -o \
+ \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
+  -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
+
+CFLAGS="$SLKCFLAGS" python3 setup.py build
+RUAMEL_NO_PIP_INSTALL_CHECK=1 python3 setup.py install --skip-build --root=$PKG --optimize=1
+
+find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
+  | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
+
+mkdir $PKG/usr/doc/$PRGNAM-$VERSION/clib
+cp -a LICENSE PKG-INFO README.rst $PKG/usr/doc/$PRGNAM-$VERSION/clib
+
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
