@@ -1,0 +1,64 @@
+#!/bin/bash
+#
+# Simple firewall
+#
+
+all_tables() {
+    /usr/sbin/iptables "$@"
+    /usr/sbin/ip6tables "$@"
+}
+
+ipt_start() {
+    echo "Loading /etc/firewall/tables"
+    /usr/sbin/iptables-restore < /etc/firewall/iptables
+    echo "Loading /etc/firewall/ip6tables"
+    /usr/sbin/ip6tables-restore < /etc/firewall/ip6tables
+}
+
+ipt_stop() {
+    echo "Stopping firewall, flusing, and deleting all chains"
+    all_tables -P INPUT ACCEPT
+    all_tables -P FORWARD ACCEPT
+    all_tables -P OUTPUT ACCEPT
+    all_tables -F
+    all_tables -X
+    all_tables -Z
+    all_tables -t nat -F
+    all_tables -t nat -X
+    all_tables -t mangle -F
+    all_tables -t mangle -X
+    all_tables -t raw -F
+    all_tables -t raw -X
+}
+
+ipt_status() {
+    echo "###############################################################################"
+    echo "###                                  IPv4                                   ###"
+    echo "###############################################################################"
+    /usr/sbin/iptables -L
+
+    echo "###############################################################################"
+    echo "###                                  IPv6                                   ###"
+    echo "###############################################################################"
+    /usr/sbin/ip6tables -L
+}
+
+
+case "$1" in
+    start)
+        ipt_start
+        ;;
+    stop)
+        ipt_stop
+        ;;
+    restart)
+        ipt_stop
+        ipt_start
+        ;;
+    status)
+        ipt_status
+        ;;
+    *)
+        echo "Usage: $0 <start | stop | restart | status>" >&2
+        ;;
+esac

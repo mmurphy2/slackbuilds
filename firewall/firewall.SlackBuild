@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# Slackware build script for vimrc-custom
+# Slackware build script for firewall
 #
 # Copyright 2021 Coastal Carolina University
 # All rights reserved.
@@ -23,8 +23,8 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
-PRGNAM=vimrc-custom
-VERSION=${VERSION:-20210709}
+PRGNAM=firewall
+VERSION=${VERSION:-20210710}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_teal}
 
@@ -35,18 +35,18 @@ TMP=${TMP:-/tmp/tealbuild/build}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp/tealbuild/output}
 
+set -e
+
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 
-mkdir -p $PKG/etc
-mkdir -p $PKG/usr/share/vim
-cat $CWD/vimrc > $PKG/etc/vimrc.new
-chown root:root $PKG/etc/vimrc.new
-chmod 644 $PKG/etc/vimrc.new
-cat $CWD/vimrc.usrshare > $PKG/usr/share/vim/vimrc
-chown root:root $PKG/usr/share/vim/vimrc
-chmod 644 $PKG/usr/share/vim/vimrc
+mkdir -p $PKG/etc/rc.d
+install -Dpm 0755 $CWD/rc.firewall $PKG/etc/rc.d/rc.firewall
+
+mkdir -p $PKG/etc/firewall
+install -Dpm 0644 $CWD/iptables $PKG/etc/firewall/iptables.new
+install -Dpm 0644 $CWD/iptables $PKG/etc/firewall/ip6tables.new
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
