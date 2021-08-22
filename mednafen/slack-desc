@@ -6,14 +6,14 @@
 # customary to leave one space after the ':' except on otherwise blank lines.
 
         |-----handy-ruler------------------------------------------------------|
-liburing: liburing (io_uring library)
-liburing:
-liburing: liburing provides helpers to setup and teardown io_uring instances,
-liburing: and also a simplified interface for applications that don't need
-liburing: (or want) to deal with the full kernel side implementation.
-liburing: For more info on io_uring, please see https://kernel.dk/io_uring.pdf
-liburing:
-liburing: homepage: https://git.kernel.dk/cgit/liburing/
-liburing:
-liburing:
-liburing:
+mednafen: mednafen (Multi Game-system Emulator)
+mednafen:
+mednafen: Mednafen is a multi-game-system emulator, for various
+mednafen: platforms, including emulation of Atari Lynx, Famicom, GameBoy
+mednafen: (Color), GameBoy Advance, Neo Geo Pocket (Color), NES - both
+mednafen: NTSC and PAL, PC-FX, WonderSwan (Color), PC Engine/TurboGrafx
+mednafen: 16 (CD) and SuperGrafx.
+mednafen:
+mednafen: Homepage: https://mednafen.github.io/
+mednafen:
+mednafen:
