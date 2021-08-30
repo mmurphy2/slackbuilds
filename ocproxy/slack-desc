@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description.
+# Line up the first '|' above the ':' following the base package name, and
+# the '|' on the right side marks the last column you can put a character in.
+# You must make exactly 11 lines for the formatting to be correct.  It's also
+# customary to leave one space after the ':' except on otherwise blank lines.
+
+       |-----handy-ruler------------------------------------------------------|
+ocproxy: ocproxy (user-level SOCKS and port-forwarding proxy for openconnect)
+ocproxy:
+ocproxy: ocproxy is a user-level SOCKS and port forwarding proxy for
+ocproxy: OpenConnect based on lwIP. When using ocproxy, OpenConnect only
+ocproxy: handles network activity that the user specifically asks to proxy, so
+ocproxy: the VPN interface no longer "hijacks" all network traffic on the host.
+ocproxy:
+ocproxy: OpenConnect can (and should) be run as a non-root user when using
+ocproxy: ocproxy.
+ocproxy:
+ocproxy: Website: https://github.com/cernekee/ocproxy
