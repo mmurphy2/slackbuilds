@@ -24,8 +24,8 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=zulu-openjdk-lts
-VERSION=${VERSION:-11.0.11}
-ZULUVERSION=${ZULUVERSION:-11.48.21}
+VERSION=${VERSION:-17.0.0}
+ZULUVERSION=${ZULUVERSION:-17.28.13}
 
 # SRCNAM is the name (without extension) of the source archive and
 # of the top directory in that archive.
