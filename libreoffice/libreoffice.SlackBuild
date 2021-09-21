@@ -26,7 +26,7 @@
 
 PRGNAM=libreoffice
 SRCNAM=libreoffice
-VERSION=${VERSION:-7.1.4.2}
+VERSION=${VERSION:-7.2.1.2}
 SHORT_VERSION=${VERSION%.*.*}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_teal}
@@ -65,6 +65,9 @@ mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $SRCNAM-$VERSION
 tar xvf $CWD/$SRCNAM-$VERSION.tar.xz
+tar xvf $CWD/libreoffice-help-$VERSION.tar.xz
+tar xvf $CWD/libreoffice-translations-$VERSION.tar.xz
+tar xvf $CWD/libreoffice-dictionaries-$VERSION.tar.xz
 cd $SRCNAM-$VERSION
 
 chown -R root:root .
@@ -74,10 +77,11 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
+# Must still link the external tarballs to prevent the Makefile from downloading them again
 mkdir -p external/tarballs
-ln -s $CWD/libreoffice-dictionaries-$VERSION.tar.xz external/tarballs/
 ln -s $CWD/libreoffice-help-$VERSION.tar.xz external/tarballs/
 ln -s $CWD/libreoffice-translations-$VERSION.tar.xz external/tarballs/
+ln -s $CWD/libreoffice-dictionaries-$VERSION.tar.xz external/tarballs/
 
 LOLANGS=${LOLANGS:-"de es fr id it ja nl vi zh-CN"}
 
@@ -249,13 +253,15 @@ chmod a+x bin/unpack-sources
 make fetch
 
 patch -p0 < $CWD/no-check-if-root.diff
+patch -p0 < $CWD/skia-freetype-2.11.diff
+patch -p1 < $CWD/libreoffice-bison-3.8.diff
 
 # GCC10 requirements (Tx alienBOB)
-sed -i external/libcdr/ExternalProject_libcdr.mk \
-   -e '/configure /i \\t\t&& sed -i "s/TRUE/true/g" src/lib/libcdr_utils.cpp \\'
+#sed -i external/libcdr/ExternalProject_libcdr.mk \
+#   -e '/configure /i \\t\t&& sed -i "s/TRUE/true/g" src/lib/libcdr_utils.cpp \\'
 sed -i external/libebook/ExternalProject_libebook.mk \
     -e '/configure /i \\t\t&& sed -i "s/TRUE/true/g" src/lib/EBOOKCharsetConverter.cpp \\'
-sed -i i18npool/source/calendar/calendar_gregorian.cxx -e 's/TRUE/true/'
+#sed -i i18npool/source/calendar/calendar_gregorian.cxx -e 's/TRUE/true/'
 
 export LDFLAGS="-lboost_system"
 make build-nocheck

@@ -1,14 +1,14 @@
 PRGNAM="libreoffice"
-VERSION="7.1.4.2"
+VERSION="7.2.1.2"
 HOMEPAGE="https://www.libreoffice.org"
-DOWNLOAD="https://download.documentfoundation.org/libreoffice/src/7.1.4/libreoffice-7.1.4.2.tar.xz
-          https://download.documentfoundation.org/libreoffice/src/7.1.4/libreoffice-dictionaries-7.1.4.2.tar.xz
-          https://download.documentfoundation.org/libreoffice/src/7.1.4/libreoffice-help-7.1.4.2.tar.xz
-          https://download.documentfoundation.org/libreoffice/src/7.1.4/libreoffice-translations-7.1.4.2.tar.xz"
-MD5SUM="4e4e81a4f66544775912c85ce214a7d7
-        d6e81b974dac1a661f06cca2f0d7b777
-        e03fdc7d36e6130b7a67d7b07be8a66f
-        63e7eb886dcd9d90ccef9dc8ae5f2ad9"
+DOWNLOAD="https://download.documentfoundation.org/libreoffice/src/7.2.1/libreoffice-7.2.1.2.tar.xz
+          https://download.documentfoundation.org/libreoffice/src/7.2.1/libreoffice-dictionaries-7.2.1.2.tar.xz
+          https://download.documentfoundation.org/libreoffice/src/7.2.1/libreoffice-help-7.2.1.2.tar.xz
+          https://download.documentfoundation.org/libreoffice/src/7.2.1/libreoffice-translations-7.2.1.2.tar.xz"
+MD5SUM="2631963c2d42eab66f34c1e57e00a995
+        e91a96bc9380bfb8b0226321d05bf5e1
+        f1f2a39364cc565c2c1970a33c54a3fc
+        bdbba4aa3c9283cdd5399822d27e9310"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="zulu-openjdk-lts"
