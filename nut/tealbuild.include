@@ -1,0 +1,2 @@
+groupadd -g 218 nut
+useradd -u 218 -g nut -s /bin/false nut

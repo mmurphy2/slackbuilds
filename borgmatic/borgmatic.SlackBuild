@@ -2,7 +2,7 @@
 
 # Slackware build script for borgmatic
 
-# Copyright 2021 Coastal Carolina University
+# Copyright 2021-2022 Coastal Carolina University
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -24,7 +24,7 @@
 
 
 PRGNAM=borgmatic
-VERSION=${VERSION:-1.5.14}
+VERSION=${VERSION:-1.5.22}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_teal}
 

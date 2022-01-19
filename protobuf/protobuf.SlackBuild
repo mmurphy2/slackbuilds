@@ -3,7 +3,7 @@
 # Slackware build script for protobuf
 
 # Copyright 2017-2021 Willy Sudiarto Raharjo <willysr@slackbuilds.org>
-# Copyright 2021 Coastal Carolina University
+# Copyright 2021-2022 Coastal Carolina University
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -25,7 +25,7 @@
 
 PRGNAM=protobuf
 SRCNAM=$PRGNAM
-VERSION=${VERSION:-3.17.3}
+VERSION=${VERSION:-3.19.3}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_teal}
 

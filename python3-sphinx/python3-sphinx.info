@@ -19,6 +19,6 @@ MD5SUM="025cf3c9c173872924f7c4d96a878b65
         eecfd8dc4933bd28c07ffb5e64fa2444"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
-REQUIRES="python3-alabaster python3-babel python3-imagesize python3-jinja python3-snowballstemmer"
+REQUIRES="python3-alabaster python3-babel python3-imagesize python3-snowballstemmer"
 MAINTAINER="Dr. Mike Murphy"
 EMAIL="mmurphy2@coastal.edu"

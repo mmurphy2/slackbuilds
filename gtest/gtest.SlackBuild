@@ -4,7 +4,7 @@
 
 # 2013-02-12 Bernski Comadizo <bcomadizo@gmail.com> Cebu
 # Copyright 2016  Dimitris Zlatanidis  Orestiada, Greece
-# Copyright 2021 Coastal Carolina University
+# Copyright 2021-2022 Coastal Carolina University
 #
 # All rights reserved.
 #
@@ -27,7 +27,7 @@
 
 PRGNAM=gtest
 SRCNAM=googletest
-VERSION=${VERSION:-1.10.0}
+VERSION=${VERSION:-1.11.0}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_teal}
 
@@ -73,7 +73,7 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
-for i in $CWD/patches/* ; do patch -p1 < $i ; done
+#for i in $CWD/patches/* ; do patch -p1 < $i ; done
 
 mkdir -p build
 cd build

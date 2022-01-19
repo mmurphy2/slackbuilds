@@ -4,7 +4,7 @@
 
 # Copyright 2009, 2010  Andrew Brouwers <abrouwers@gmail.com>
 # Copyright 2013-2018  Edward Koenig, Vancouver, USA <kingbeowulf@gmail.com>
-# Copyright 2021 Coastal Carolina University
+# Copyright 2021-2022 Coastal Carolina University
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -25,7 +25,7 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=qemu
-VERSION=${VERSION:-6.0.0}
+VERSION=${VERSION:-6.2.0}
 SRCVER=$(echo $VERSION | tr _ - )
 BUILD=${BUILD:-1}
 TAG=${TAG:-_teal}
@@ -136,7 +136,6 @@ CXXFLAGS="$SLKCFLAGS" \
   --${uring}able-linux-io-uring \
   --audio-drv-list=${AUDIODRIVERS} \
   $with_vnc \
-  --enable-vde \
   --enable-guest-agent \
   --enable-auth-pam \
   --enable-curl \

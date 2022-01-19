@@ -3,7 +3,7 @@
 # Slackware build script for Device Tree Compiler
 
 # Copyright 2012 Stuart Winter <mozes@slackware.com>
-# Copyright 2021 Coastal Carolina University
+# Copyright 2021-2022 Coastal Carolina University
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -26,7 +26,7 @@
 # With tweaks from rworkman to use in SlackBuilds.org tree
 
 PRGNAM=device-tree-compiler
-VERSION=${VERSION:-1.6.0}
+VERSION=${VERSION:-1.6.1}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_teal}
 
@@ -62,9 +62,9 @@ set -e
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
-rm -rf $PRGNAM-$VERSION
-tar xvf $CWD/$PRGNAM-$VERSION.tar.lz
-cd $PRGNAM-$VERSION
+rm -rf dtc-$VERSION
+tar xvf $CWD/dtc-$VERSION.tar.gz
+cd dtc-$VERSION
 chown -R root:root .
 find -L . \
  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \

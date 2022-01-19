@@ -1,8 +1,6 @@
-# Old SlackBuilds
+# SlackBuilds
 
-This repository contains SlackBuilds that were part of a proof-of-concept migration study for Slackware Linux. As of
-9/21/2021, this study has concluded, and another distribution has been selected. Consequently, these builds are not
-likely to be updated. In addition, the effort to develop a build system has been abandoned.
+Turns out this repository is not quite dead, after all :).
 
 
 ## Info File Format
@@ -21,3 +19,5 @@ The format differences are:
 3. Source files in the DOWNLOAD and DOWNLOAD\_x86\_64 entries may be renamed upon download by prefixing them with
    the base filename, followed by two colons (::), followed by the URL (no spaces in any single download entry).
 
+Note that the current build script format is not up to date with some of the common SlackBuild features as of 15.0-RC3. I need
+to write a replacement for my build system first.

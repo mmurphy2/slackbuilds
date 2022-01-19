@@ -2,7 +2,7 @@
 #
 # Slackware build script for android-tools
 #
-# Copyright 2021 Coastal Carolina University
+# Copyright 2021-2022 Coastal Carolina University
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -25,7 +25,7 @@
 
 PRGNAM=android-tools
 SRCNAM="$PRGNAM"
-VERSION=${VERSION:-31.0.0p1}
+VERSION=${VERSION:-31.0.3p1}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_teal}
 
