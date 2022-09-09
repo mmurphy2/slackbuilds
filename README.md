@@ -1,6 +1,10 @@
 # SlackBuilds
 
-Turns out this repository is not quite dead, after all :).
+
+## Abandoned
+
+I have switched to [Alpine Linux](https://www.alpinelinux.org) and am no longer maintaining
+packages for Slackware Linux.
 
 
 ## Info File Format
